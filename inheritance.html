@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            color: green;
+        }
+
+        .my-class-1 a{
+            color:inherit;
+        }
+
+        .my-class-2 a{
+            color: initial;
+        }
+
+        .my-class-3 a{
+            color: unset;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>დეფაულტ <a href="#">ბმულის</a> ფერი</li>
+        <li class="my-class-1">Inherit ანუ მემკვიდრეობით მიიღოს (inherit)<a href="#">ბმულის</a> ფერი</li>
+        <li class="my-class-2">Reset ანუ საწყის ეტაპამდე გადაიყვანოს (initial) <a href="#">ბმულის</a>ფერი</li>
+        <li class="my-class-3">Unset ანუ აბრუნებს დეფოლტ ქმედებამდე (unset)<a href="#">ბმულის</a>ფერს</li>
+    </ul>
+</body>
+</html>
