@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            color: white;
+            border: 10px solid black;
+            font-size: 50px;
+            transition: all 1s;
+            animation: moveDiv 2s;
+            animation-iteration-count: infinite;
+        }
+        div:hover {
+            background-color: yellow;
+            width: 400px;
+            height: 400px;
+            transform: translate(50px, 50px);
+            transform: rotate(360deg);
+        }
+
+        @keyframes moveDiv {
+            from {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(100px, 0);
+            }
+            50% {
+                transform: translate(100px, 100px);
+            }
+            75% {
+                transform: translate(0, 100px);
+            }
+            to {
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Welcome to CSS Animations!
+    </div>
+</body>
+</html>
